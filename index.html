@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="hero  is-fullheight">
+  <section class="hero is-fullheight has-carousel">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -41,6 +41,17 @@
         </div>
       </nav>
     </div>
+    <div id="carousel-demo" class="hero-carousel">
+      <div class="item-1">
+        <!-- Slide Content -->
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+      </div>
+      <div class="item-3">
+        <!-- Slide Content -->
+      </div>
+    </div>
 
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -55,8 +66,13 @@
 
 
   </section>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 4
+			});
+		</script>
   <script type="text/javascript" src="lib/main.js"></script>
 </body>
 
