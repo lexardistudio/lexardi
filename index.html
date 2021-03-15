@@ -12,28 +12,37 @@
   <meta property="og:title" content="Lexardi Studio">
   <meta property="og:description" content="Estudio multidisciplinar ubicado en Bilbao">
   <meta property="og:url" content="https://lexardi.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <section class="hero is-fullheight">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <img src="assets/lexardi_logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
-          width="112" height="28">
-      </a>
-    </div>
-    <div class="navbar-brand navbar-end">
-      <a class="navbar-item" href="studio.html">
-        <img src="assets/studio_logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
-          width="112" height="28">
-      </a>
-    </div>
-
-  </nav>
-  
-  
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="assets/lexardi_logo.png" alt="" width="112" height="28">
+        </a>
+      </div>
+      <div class="navbar-brand navbar-end">
+        <button class="ham">
+          <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+          <span class="menuIcon material-icons">
+            menu
+          </span>
+          <span class="xIcon material-icons">
+            close
+          </span>
+        </button>
+        <ul class="menu">
+          <li><a class="menuLink" href="#">Home</a></li>
+          <li><a class="menuLink" href="#">Profile</a></li>
+          <li><a class="menuLink" href="#">About</a></li>
+          <li><a class="menuLink" href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="hero-body">
       <div class="container has-text-centered">
         <figure class="">
@@ -41,9 +50,8 @@
         </figure>
       </div>
     </div>
-    
   </section>
-  
+  <script  src="_javascript/script.js"></script>
 </body>
 
 </html>

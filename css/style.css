@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ham {
+  position: fixed;
+  /* keep the hamburger button above everything */
+  z-index: 100;
+  top: 0,5rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.xIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  color: black;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+li {
+  padding: 1rem 0;
+}
+
+.menuLink {
+  display: inline;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  text-decoration: underline;
+}
